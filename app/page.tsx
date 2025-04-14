@@ -5,11 +5,11 @@ import HeroSection from "@/components/hero";
 
 export default function Home() {
   return (
-   <div className="bg-[#0B0121]" >
-    <HeroSection/>
-    <Features/>
-    <FeatureCards/>
-    <AnalyticsCTASection/>
-   </div>
+    <div className="bg-[#0B0121]">
+      <HeroSection />
+      <Features />
+      <FeatureCards />
+      <AnalyticsCTASection />
+    </div>
   );
 }
