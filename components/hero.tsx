@@ -59,7 +59,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Hero Content with staggered fade-in */}
+        {/* Hero Content*/}
         <div className="max-w-3xl mx-auto">
           <h1
             className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium mb-6 leading-tight transition-all duration-700 delay-300 ${
@@ -81,7 +81,7 @@ export default function HeroSection() {
             varius enim in eros elementum tristique.
           </p>
 
-          {/* CTA Buttons with hover effects */}
+          {/* CTA Buttons */}
           <div
             className={`flex flex-col sm:flex-row justify-center gap-4 transition-all duration-700 delay-700 ${
               isVisible

@@ -5,25 +5,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState<string | null>(null);
-
-  // Handle scroll effects
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -45,10 +27,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-[#0B0121] text-[#ECECEC] px-4 sm:px-6 py-4 transition-all duration-300 ${
-        scrolled
-          ? "shadow-lg shadow-purple-900/10 backdrop-blur-md bg-[#0B0121]/90"
-          : ""
+      className={`sticky top-0 z-50 bg-[#0B0121] text-[#ECECEC] px-4 sm:px-6 py-4 transition-all duration-300 shadow-lg shadow-purple-900/10 backdrop-blur-md bg-[#0B0121]/90"
+        
       }`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo and Brand */}

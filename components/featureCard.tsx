@@ -19,11 +19,11 @@ export default function FeatureCards() {
             onMouseEnter={() => setHoveredCard("analytics")}
             onMouseLeave={() => setHoveredCard(null)}>
             {/* Icon with animation */}
-            <div className="bg-gradient-to-br from-purple-600 to-purple-800 w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-all duration-300 hover:rotate-6 hover:shadow-md hover:shadow-purple-500/50">
+            <div className=" w-20 h-20 rounded-lg mb-6 transition-all duration-300 hover:rotate-6 hover:shadow-md hover:shadow-purple-500/50">
               <Image
                 src={analyticsIcon}
                 alt="Analytics Icon"
-                className={`transition-transform duration-300 ${
+                className={`transition-transform duration-300  ${
                   hoveredCard === "analytics" ? "scale-110" : ""
                 }`}
               />
@@ -51,7 +51,7 @@ export default function FeatureCards() {
             onMouseEnter={() => setHoveredCard("tokens")}
             onMouseLeave={() => setHoveredCard(null)}>
             {/* Icon with animation */}
-            <div className="bg-gradient-to-br from-purple-600 to-purple-800 w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-all duration-300 hover:rotate-6 hover:shadow-md hover:shadow-purple-500/50">
+            <div className=" w-20 h-20 rounded-lg mb-6 transition-all duration-300 hover:rotate-6 hover:shadow-md hover:shadow-purple-500/50">
               <Image
                 src={creditTokenIcon}
                 alt="Credit Token Icon"
@@ -78,7 +78,7 @@ export default function FeatureCards() {
           </div>
         </div>
 
-        {/* Code Collaboration Card - fully responsive */}
+        {/* Code Collaboration Card */}
         <div
           className="bg-gradient-to-b from-[#BB9BFF26] to-[#0B0121] border border-[#BB9BFF26] rounded-2xl p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:shadow-purple-900/20 hover:border-purple-500 cursor-pointer"
           onMouseEnter={() => setHoveredCard("collaboration")}
@@ -86,7 +86,7 @@ export default function FeatureCards() {
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="flex-1">
               {/* Icon with animation */}
-              <div className="bg-gradient-to-br from-purple-600 to-purple-800 w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-all duration-300 hover:rotate-6 hover:shadow-md hover:shadow-purple-500/50">
+              <div className=" w-20 h-20 rounded-lg mb-6 transition-all duration-300 hover:rotate-6 hover:shadow-md hover:shadow-purple-500/50">
                 <Image
                   src={codeIcon}
                   alt="Code Icon"
